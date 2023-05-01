@@ -1,0 +1,60 @@
+.blind{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    margin: -1px;
+}
+
+
+
+.gnb .util-list .btn-lang::after,
+.sc-team .team-list .title-box .num::after,
+.sc-team .group-career1 .flex-area::before,
+.sc-support .link-support::after,
+.footer .related-area .btn-related::after,
+.header .h-logo a::after,
+.control-wrap [class*='btn-']{
+    background-image: url('../images/sp-pc.png');
+    background-repeat: no-repeat;
+    background-size: 328px 205px;
+}
+
+
+/* 1280px~[1025px] */
+@media (max-width:1280px) {
+    .gnb .btn-menu.on::after,
+    .gnb .side-nav .group-nav .nav.all::after,
+    .gnb .btn-menu::after,
+    .header .h-logo a::after{
+        background-image: url('../images/sp-mobile.png');
+        background-repeat: no-repeat;
+    }
+    
+}
+/* 1024~[768px] */
+@media (max-width:1024px) {
+
+    .common-inner{
+        padding: 0 50px;
+    }
+    
+}
+/* 모바일 767~[320] */
+@media (max-width:767px) {
+    .common-inner{
+        padding: 0 22px;
+    }
+    .sc-team .group-career2 .sub::before,
+    .sc-team .group-career2 .career::before,
+    .sc-team .group-career2 .btn-submit::after{
+        background-image: url('../images/sp-pc.png');
+        background-repeat: no-repeat;
+    }
+    .sc-team .group-career2 .btn-close::after,
+    .sc-team .btn-search::before{
+        background-image: url('../images/sp-mobile.png');
+        background-repeat: no-repeat;
+    }
+}

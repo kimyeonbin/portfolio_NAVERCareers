@@ -223,10 +223,12 @@
     top: 0;
     left: -100%;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background: #fff;
     overflow-y: auto;
     padding: 60px 32px;
+    display: none;
+    z-index: 100;
 }
 .sc-team .group-career2.on{
     left: 0;
@@ -406,11 +408,11 @@
         padding-left: 9px;
         padding-right: 25px;
     }
-    .sc-team .team-list .title-box{
-        min-width: 360px;
+    .sc-team .team-list .title-box .title{
+        font-size: 34px;    
     }
     .sc-team .team-list .desc{
-        /* font-size: 18px; */
+        font-size: 18px;
     }
     .common-inner{
         padding: 0 65px;
@@ -442,7 +444,9 @@
     .sc-team .group-career1{
         display: none;
     }
-   
+    .sc-team .group-career2{
+        display: block;
+    }
 
     .sc-team .btn-search{
         display: block;

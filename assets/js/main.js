@@ -68,7 +68,6 @@ $(function(){
      */
     $('.gnb .btn-menu').click(function(){
         $('.gnb .btn-menu, .gnb .side-nav').toggleClass('on');
-        // $('body').toggleClass('hidden');
     });
     /**
      * @사이드내비_아코디언메뉴
@@ -139,14 +138,15 @@ $(function(){
      * @모바일검색창_너비조절
      */
     $(window).resize(function(){
-
+        
         windowVal = $(window).width();
 
-        if(windowVal >= 768 && '.sc-team .group-career2.on'){
+        if(windowVal >= 768){
             $('body').removeClass('hidden');
+        }else{
+            if($('.sc-team .group-career2').hasClass('on')){
+                $('body').addClass('hidden');
+            }
         }
-        else{
-            $('body').addClass('hidden');
-        };
     });
 });

@@ -7,8 +7,9 @@ $(function(){
             $('.header').addClass('on');
             $(this).find('.sub').addClass('on');
         }},function(){
-            $('.header,.header .sub').removeClass('on');}
-        );
+            $('.header,.header .sub').removeClass('on');
+        }
+    );
     /**
      * @사이트언어변경
      */
@@ -52,7 +53,7 @@ $(function(){
      * @모바일검색_전체삭제
      */
     $('.group-career2 .btn-clear').click(function(){
-        $('.group-career2 input[type=checkbox]').prop('checked',false)
+        $('.group-career2 input[type=checkbox]').prop('checked',false);
     });
     /**
      * @직군검색

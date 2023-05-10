@@ -6,10 +6,20 @@
 }
 
 
-.skip-nav{ position: relative; z-index: 15;}
-.skip-nav a{ position: absolute; top: -94px; line-height: 30px; background: #ccc; }
+.skip-nav{ 
+    position: relative; 
+    z-index: 15;
+}
+.skip-nav a{ 
+    position: absolute; 
+    top: -94px; 
+    line-height: 30px; 
+    background: #ccc; 
+}
 .skip-nav a:focus,
-.skip-nav a:active{ top: -60px; }
+.skip-nav a:active{ 
+    top: -60px; 
+}
 
 
 .common-inner{
@@ -46,11 +56,10 @@
     padding: 0 104px 0 98px;
     margin: 0 auto;
 }
-.header h1{}
-.header .h-logo a{
+.header .logo a{
     display: block;
 }
-.header .h-logo a::after{
+.header .logo a::after{
     display: inline-block;
     vertical-align: top;
     width: 223px;
@@ -76,7 +85,6 @@
     position: relative;
     flex: 1;
 }
-
 .gnb .nav-list .nav-item a{
     display: block;
     padding: 0 10px;
@@ -96,7 +104,6 @@
     background: #000;
     content: '';
 }
-
 .gnb .nav-list .nav-item .sub{
     display: none;
     flex-direction: column;
@@ -109,16 +116,11 @@
 .gnb .nav-list .nav-item .sub.on{
     display: flex;
 }
-
 .gnb .util-list{
     margin-left: auto;
     display: flex;
     align-items: center;
 }
-.gnb .util-list li{
-
-}
-
 .gnb .util-list a, 
 .gnb .util-list .btn-lang{
     display: block;
@@ -130,14 +132,12 @@
 .gnb .util-list .lang-box{
     position: relative;
 }
-.gnb .util-list .btn-lang{
-}
 .gnb .util-list .lang{
     display: none;
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #fff;
+    background: #fff;
 }
 .gnb .util-list .lang-box.on .lang{
     display: block;
@@ -184,7 +184,7 @@
 }
 .gnb .side-nav .group-nav .nav.active{
     display: block;
-    background-color: #f2f2f2;
+    background: #f2f2f2;
 }
 .gnb .side-nav .group-nav .depth2{
     display: none;
@@ -212,7 +212,7 @@
     left: 22px;
     right: 22px;
     height: 1px;
-    background-color: #d0d0d0;
+    background: #d0d0d0;
 }
 .gnb .side-nav .group-nav .lang-box{
     padding: 19px 0 11px;
@@ -244,17 +244,17 @@
 
 .footer{
     width: 100%;
-    background-color: #f2f2f2;
+    background: #f2f2f2;
 }
 .footer .group-info{
     display: flex;
     align-items: center;
     max-width: 1920px;
     padding: 25px 104px 25px 98px;
-    background-color: #f2f2f2;
+    background: #f2f2f2;
     margin: 0 auto;
 }
-.footer .f-logo a{
+.footer .logo a{
     display: block;
     font-size: 18px;
     line-height: 32px;
@@ -278,11 +278,11 @@
     font-size: 14px;
     line-height: 42px;
     text-align: left;
-    background-color: #f2f2f2;
+    background: #f2f2f2;
 }
 .footer .related-area.active .btn-related{
     padding: 0 12px;
-    background-color: #fff;
+    background: #fff;
 }
 .footer .related-area.active .btn-related::after{
     transform: rotate(180deg);
@@ -307,7 +307,7 @@
     left: 0;
     right: 0;
     height: 1px;
-    background-color: #000;
+    background: #000;
     content: "";
 }
 .footer .related-area .related-wrap{
@@ -319,9 +319,8 @@
     bottom: 42px;
     left: 0;
     right: 0;
-    background-color: #fff;
+    background: #fff;
 }
-.footer .related-wrap .list{}
 .footer .related-wrap .item{
     padding: 0 12px;
     font-size: 18px;
@@ -351,7 +350,7 @@
     .gnb .util-list{
         display: none;
     }
-    .header .h-logo a::after{
+    .header .logo a::after{
         width: 160px;
         height: 23px;
         background-position: 0 0;
@@ -420,10 +419,10 @@
         display: block;
         padding: 25px 22px 29px;
     }
-    .footer .f-logo{
+    .footer .logo{
         display: inline-block;
     }
-    .footer .f-logo a{
+    .footer .logo a{
         font-size: 15px;
     }
     .footer .related-area .btn-related{

@@ -1,9 +1,9 @@
-:root {
+:root{
     -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: 100%;
     text-size-adjust: 100%;
     cursor: auto;
     overflow-wrap: break-word;
-    -moz-tab-size: 4;
     tab-size: 4
 }
 *{
@@ -12,39 +12,40 @@
     font: inherit;
     color: inherit;
 }
-*, :after, :before {
+*, :after, :before{
     box-sizing: border-box;
     flex-shrink: 0;
 }
-html, body {
+html, body{
     height: 100%;
 }
 ul{
     list-style: none;
 }
-img, picture, video, canvas, svg {
+img, picture, video, canvas, svg{
     display: block;
     max-width: 100%;
 }
-button {
+button{
     background: none;
     border: 0;
     cursor: pointer;
 }
-a {
-    text-decoration: none
+a{
+    text-decoration: none;
 }
-table {
+table{
     border-collapse: collapse;
-    border-spacing: 0
+    border-spacing: 0;
 }
+
+
+
 
 body{
     font-family: "TTHoves", "NanumSquare", "나눔스퀘어", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Apple SD Gothic Neo", "돋움", dotum, arial, sans-serif;
     font-size: 14px;
     color: #000;
-    -webkit-text-size-adjust: none;
-    -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
     word-break: break-all;
 }
@@ -59,9 +60,9 @@ input, select{
     font-family: "NanumSquare", "나눔스퀘어", "돋움", dotum, arial, sans-serif;
 }
 select {
-    -webkit-appearance:none; /* for chrome */
-    -moz-appearance:none; /*for firefox*/
-    appearance:none;
+    -webkit-appearance: none; /* for chrome */
+    -moz-appearance: none; /*for firefox*/
+    appearance: none;
  }
 
 

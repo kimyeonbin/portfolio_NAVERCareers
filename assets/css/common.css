@@ -11,13 +11,12 @@
 }
 
 
-
 .gnb .util-list .btn-lang::after,
 .sc-team .team-list .title-box .num::after,
 .sc-team .group-career1 .flex-area::before,
 .sc-support .link-support::after,
 .footer .related-area .btn-related::after,
-.header .h-logo a::after,
+.header .logo a::after,
 .control-wrap [class*='btn-']{
     background-image: url('../images/sp-pc.png');
     background-repeat: no-repeat;
@@ -30,7 +29,7 @@
     .gnb .btn-menu.on::after,
     .gnb .side-nav .group-nav .nav.all::after,
     .gnb .btn-menu::after,
-    .header .h-logo a::after{
+    .header .logo a::after{
         background-image: url('../images/sp-mobile.png');
         background-repeat: no-repeat;
     }

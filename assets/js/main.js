@@ -39,7 +39,7 @@ $(function(){
         $(this).toggleClass('on').siblings('.group-career2 .depth3').stop().slideToggle();
     });
     /**
-     * @모바일검색_전체선택
+     * @모바일검색_전체선택및삭제
      */
     $('.all').click(function(){
         sort=$(this).data('sort');
@@ -50,7 +50,7 @@ $(function(){
         };
     });
     /**
-     * @모바일검색_전체삭제
+     * @모바일검색_전체영역checked삭제
      */
     $('.group-career2 .btn-clear').click(function(){
         $('.group-career2 input[type=checkbox]').prop('checked',false);

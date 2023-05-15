@@ -448,8 +448,7 @@
 }
 .sc-people .swiper-slide .img-area{ 
     position: relative; 
-    padding-bottom: 
-    calc((520/1097)*100%); 
+    padding-bottom: calc((520/1097)*100%); 
 }
 .sc-people .swiper-slide img{ 
     position: absolute; 

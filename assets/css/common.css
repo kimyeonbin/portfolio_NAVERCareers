@@ -37,7 +37,6 @@
 }
 /* 1024~[768px] */
 @media (max-width:1024px) {
-
     .common-inner{
         padding: 0 50px;
     }

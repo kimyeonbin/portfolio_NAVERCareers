@@ -58,7 +58,7 @@ input, select{
 .sc-team .group-career1{
     font-family: "NanumSquare", "나눔스퀘어", "돋움", dotum, arial, sans-serif;
 }
-select {
+select{
     -webkit-appearance: none; /* for chrome */
     -moz-appearance: none; /*for firefox*/
     appearance: none;

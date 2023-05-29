@@ -147,7 +147,7 @@ $(function(){
         }else{
             if($('.sc-team .group-career2').hasClass('on')){
                 $('body').addClass('hidden');
-            }
-        }
+            };
+        };
     });
 });

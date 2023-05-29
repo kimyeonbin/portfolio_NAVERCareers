@@ -459,7 +459,9 @@
     object-fit: cover; 
 }
 .sc-people .swiper-slide .text-area{ 
-    overflow: hidden; margin-top: 29px; word-break: keep-all; 
+    overflow: hidden; 
+    margin-top: 29px; 
+    word-break: keep-all; 
 }
 .sc-people .swiper-slide .title-box{ 
     display: flex; 

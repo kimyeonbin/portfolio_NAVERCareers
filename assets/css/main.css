@@ -627,7 +627,7 @@
 }
 /* 모바일 767px ~ [320px] */
 @media (max-width:767px) {
-    .sc-video .swiper-slide .video-area {
+    .sc-video .swiper-slide .video-area{
         position: relative;
         padding-bottom: 62.4%;
     }
@@ -778,7 +778,6 @@
         line-height: 26px;
         letter-spacing: -0.28px;
     }
-    
 
 
     .sc-support{

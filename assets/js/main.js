@@ -142,12 +142,13 @@ $(function(){
         
         windowVal = $(window).innerWidth();
 
-        if(windowVal >= 768){
-            $('body').removeClass('hidden');
-        }else{
+        if(windowVal < 769){
             if($('.sc-team .group-career2').hasClass('on')){
                 $('body').addClass('hidden');
+                return false;
             };
+        }else{
+            $('body').removeClass('hidden');
         };
     });
 });

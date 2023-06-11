@@ -140,7 +140,7 @@ $(function(){
      */
     $(window).resize(function(){
         
-        windowVal = $(window).width();
+        windowVal = $(window).innerWidth();
 
         if(windowVal >= 768){
             $('body').removeClass('hidden');

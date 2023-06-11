@@ -65,6 +65,7 @@ $(function(){
         if(windowVal <= 767){
             if($('.sc-team .group-career2').hasClass('on')){
                 $('body').addClass('hidden');
+                $('.header').addClass('hidden');
             };
         }else{
             $('body').removeClass('hidden');

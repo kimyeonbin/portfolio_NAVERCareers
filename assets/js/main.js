@@ -19,12 +19,12 @@ $(function(){
     /**
      * @모바일검색창_열고닫기
      */
-    $('.btn-search').click(function(){
+    $('.sc-team .btn-search').click(function(){
         $('.group-career2').addClass('on');
         $('body').addClass('hidden');
         $('.header').addClass('hidden');
     });
-    $('.group-career2 .btn-close').click(function(){
+    $('.sc-team .group-career2 .btn-close').click(function(){
         $('.group-career2').removeClass('on');
         $('body').removeClass('hidden');
         $('.header').removeClass('hidden');
@@ -54,6 +54,22 @@ $(function(){
      */
     $('.group-career2 .btn-clear').click(function(){
         $('.group-career2 input[type=checkbox]').prop('checked',false);
+    });
+    /**
+     * @모바일검색창_너비조절
+     */
+    $(window).resize(function(){
+    
+        windowVal = $(window).innerWidth();
+
+        if(windowVal <= 767){
+            if($('.sc-team .group-career2').hasClass('on')){
+                $('body').addClass('hidden');
+            };
+        }else{
+            $('body').removeClass('hidden');
+            $('.header').removeClass('hidden');
+        };
     });
     /**
      * @직군검색
@@ -134,21 +150,5 @@ $(function(){
      */
     $('.footer .related-area .btn-related').click(function(){
         $('.footer .related-area').toggleClass('active');
-    });
-    /**
-     * @모바일검색창_너비조절
-     */
-    $(window).resize(function(){
-        
-        windowVal = $(window).innerWidth();
-
-        if(windowVal <= 767){
-            if($('.sc-team .group-career2').hasClass('on')){
-                $('body').addClass('hidden');
-                return false;
-            };
-        }else{
-            $('body').removeClass('hidden');
-        };
     });
 });

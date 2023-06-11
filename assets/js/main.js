@@ -142,7 +142,7 @@ $(function(){
         
         windowVal = $(window).innerWidth();
 
-        if(windowVal < 769){
+        if(windowVal <= 767){
             if($('.sc-team .group-career2').hasClass('on')){
                 $('body').addClass('hidden');
                 return false;

@@ -402,7 +402,7 @@
     right: 0;
     height: 1px;
     background: #000;
-    content: "";
+    content: '';
 }
 .sc-team .group-career2 .btn-close{
     position: absolute;

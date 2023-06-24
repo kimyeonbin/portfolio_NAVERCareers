@@ -4,6 +4,7 @@
     text-size-adjust: 100%;
     cursor: auto;
     overflow-wrap: break-word;
+    word-break: break-word;
 }
 *{
     margin: 0;
@@ -37,17 +38,6 @@ table{
     border-collapse: collapse;
     border-spacing: 0;
 }
-
-
-
-
-body{
-    font-family: "TTHoves", "NanumSquare", "나눔스퀘어", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Apple SD Gothic Neo", "돋움", dotum, arial, sans-serif;
-    font-size: 14px;
-    color: #000;
-    overflow-x: hidden;
-    word-break: break-all;
-}
 fieldset{
     border: 0;
 }
@@ -62,6 +52,13 @@ select{
     -webkit-appearance: none; /* for chrome */
     -moz-appearance: none; /*for firefox*/
     appearance: none;
+}
+body{
+    font-family: "TTHoves", "NanumSquare", "나눔스퀘어", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Apple SD Gothic Neo", "돋움", dotum, arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    overflow-x: hidden;
+    word-break: break-all;
 }
 
 

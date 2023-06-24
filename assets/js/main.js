@@ -5,7 +5,7 @@ $(function(){
             $('.header').addClass('on');
             $(this).find('.sub').addClass('on');
         }},function(){
-            $('.header,.header .sub').removeClass('on');
+            $('.header, .header .sub').removeClass('on');
         }
     );
     // 사이트언어변경

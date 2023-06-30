@@ -1,6 +1,3 @@
-.hidden{
-    overflow: hidden;
-}
 .blind{
     position: absolute;
     width: 1px;
@@ -9,8 +6,9 @@
     clip: rect(0, 0, 0, 0);
     margin: -1px;
 }
-
-
+.hidden{
+    overflow: hidden;
+}
 .gnb .util-list .btn-lang::after,
 .sc-team .team-list .title-box .num::after,
 .sc-team .group-career1 .flex-area::before,
@@ -22,8 +20,6 @@
     background-repeat: no-repeat;
     background-size: 328px 205px;
 }
-
-
 /* 1280px~[1025px] */
 @media (max-width:1280px) {
     .gnb .btn-menu.on::after,
@@ -33,14 +29,12 @@
         background-image: url('../images/sp-mobile.png');
         background-repeat: no-repeat;
     }
-    
 }
 /* 1024~[768px] */
 @media (max-width:1024px) {
     .common-inner{
         padding: 0 50px;
     }
-    
 }
 /* 모바일 767~[320] */
 @media (max-width:767px) {

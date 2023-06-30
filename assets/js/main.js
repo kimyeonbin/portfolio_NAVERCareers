@@ -8,9 +8,18 @@ $(function(){
             $('.header, .header .sub').removeClass('on');
         }
     );
-    // 사이트언어변경
+    // 사이트언어변경_버튼
     $('.gnb .btn-lang').click(function(){
-        $('.gnb .lang-box').toggleClass('on');
+        if($('.gnb .lang-box').hasClass('on')){
+            $('.gnb .lang-box').removeClass('on');
+            return false;
+        };
+        $('.gnb .lang-box').addClass('on');
+    });
+    $('html').click(function(e){
+        if($(e.target).parents('.gnb .lang-box').length < 1){
+            $('.gnb .lang-box').removeClass('on');
+        };
     });
     // 모바일검색창_열고닫기
     $('.sc-team .btn-search').click(function(){
@@ -61,7 +70,16 @@ $(function(){
         $(this).css('color','#000');
     });
     $('.group-career1 select').click(function(){
-        $(this).toggleClass('active');
+        if($(this).hasClass('active')){
+            $(this).removeClass('active');
+            return false;
+        };
+        $(this).addClass('active');
+    });
+    $('html').click(function(e){
+        if($(e.target).parents('.group-career1 .select-box').length < 1){
+            $('.group-career1 select').removeClass('active');
+        };
     });
     // 사이드내비_버튼
     $('.gnb .btn-menu').click(function(){
@@ -118,6 +136,15 @@ $(function(){
     });  
     // 관련사이트
     $('.footer .related-area .btn-related').click(function(){
-        $('.footer .related-area').toggleClass('active');
+        if($('.footer .related-area').hasClass('active')){
+            $('.footer .related-area').removeClass('active');
+            return false;
+        };
+        $('.footer .related-area').addClass('active');
+    });
+    $('html').click(function(e){
+        if($(e.target).parents('.footer .related-area').length < 1){
+            $('.footer .related-area').removeClass('active');
+        };
     });
 });
